@@ -1,7 +1,6 @@
 function setup() { 
   createCanvas(450, 500);
-}
-function draw() {
+
     var xCenter = 200;
     var yCenter = 200;
 

@@ -8,10 +8,8 @@ function setup() {
     
 	createCanvas(w, h);
     background('rgb(255,255,255)');
-}
-function draw(){
-    var w = 640;
-    var h = 480;
+
+
 //    shadows
     stroke('rgb(150, 150, 150)');
     fill('rgb(150, 150, 150)');
