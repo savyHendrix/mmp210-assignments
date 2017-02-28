@@ -116,7 +116,7 @@ function setup() {
 //    text
     fill('rgb(255,255,255)');
     stroke('rgb(0,0,0)');
-    textFont('Bangers');
+    textFont(myFont);
     textAlign(CENTER);
     textSize(170);
     strokeWeight(15);
