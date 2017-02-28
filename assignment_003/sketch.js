@@ -1,7 +1,7 @@
-//var myFont
-//function preload() {
-//    myFont = loadFont('bangers/Bangers.ttf')
-//}
+var myFont
+function preload() {
+    myFont = loadFont('bangers/Bangers.ttf')
+}
 function setup() {
     var w = 640;
     var h = 480;
