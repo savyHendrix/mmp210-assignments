@@ -1,11 +1,5 @@
-<<<<<<< HEAD
 //function preload() {
 //    var myFont = loadFont('Bangers.ttf')
-=======
-//var myFont
-//function preload() {
-//    myFont = loadFont('bangers/Bangers.ttf')
->>>>>>> gh-pages
 //}
 function setup() {
     var w = 640;
