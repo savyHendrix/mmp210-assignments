@@ -131,5 +131,5 @@ function setup() {
     textFont('Courier New');
     textSize(11);
     strokeWeight(1);
-    text(c + name + year, 585, 467);
+    text(c + " " + name + " " + year, 585, 467);
 }
