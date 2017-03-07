@@ -23,8 +23,8 @@ function draw(){
 		var dark = color("rgb(19,106,193)");
 	}
 	else{
-		var light = color("rgb(252,131,255)");
-		var dark = color("rgb(206,0,213)");
+		var light = color("rgb(255,155,255)");
+		var dark = color("rgb(235,12,235)");
 	}
 //	stable ellipses
 	noFill();
