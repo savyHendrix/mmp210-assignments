@@ -1,6 +1,6 @@
 var ellipseWidth = 0;
 function setup(){
-    createCanvas(600,600);
+    createCanvas(displayWidth,500);
 //    background('rgb(110,150,200)');
 }
 function draw(){
@@ -18,7 +18,7 @@ function draw(){
 		ellipseWidth = 0;
 	}
 //	color change left/right
-	if(mouseX > width/2){
+	if(mouseY > height/2){
 		var light = color("rgb(135,196,255)");
 		var dark = color("rgb(19,106,193)");
 	}
