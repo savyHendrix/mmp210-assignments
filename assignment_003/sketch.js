@@ -1,12 +1,7 @@
-//function preload() {
-//    var myFont = loadFont('Bangers.ttf')
-//}
-
 var myFont
 function preload() {
-    myFont = loadFont('bangers/Bangers.ttf')
+    myFont = loadFont('Bangers.ttf')
 }
->>>>>>> origin/master
 function setup() {
     var w = 640;
     var h = 480;
