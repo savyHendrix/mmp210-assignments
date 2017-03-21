@@ -1,16 +1,21 @@
+<<<<<<< HEAD
 //function preload() {
 //    var myFont = loadFont('Bangers.ttf')
 //}
+=======
+var myFont
+function preload() {
+    myFont = loadFont('bangers/Bangers.ttf')
+}
+>>>>>>> origin/master
 function setup() {
     var w = 640;
     var h = 480;
     
 	createCanvas(w, h);
     background('rgb(255,255,255)');
-}
-function draw(){
-    var w = 640;
-    var h = 480;
+
+
 //    shadows
     stroke('rgb(150, 150, 150)');
     fill('rgb(150, 150, 150)');
@@ -117,7 +122,7 @@ function draw(){
 //    text
     fill('rgb(255,255,255)');
     stroke('rgb(0,0,0)');
-    textFont('Bangers');
+    textFont(myFont);
     textAlign(CENTER);
     textSize(170);
     strokeWeight(15);
@@ -132,5 +137,5 @@ function draw(){
     textFont('Courier New');
     textSize(11);
     strokeWeight(1);
-    text(c + name + year, 585, 467);
+    text(c + " " + name + " " + year, 585, 467);
 }
