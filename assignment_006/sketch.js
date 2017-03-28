@@ -3,6 +3,7 @@
 var r = 0;
 var x = 0;
 var y = 0;
+//var n = 10;
 
 function setup() { 
     createCanvas(640, 480);
@@ -12,44 +13,49 @@ function setup() {
 
 function draw() {
     background(0);
-    fill("green");
-    ellipse(0, 0, 100);
     
-   
-    translate(width/2, height/2);
-
+    
     push();
     rotate(r);
-    rectMode(CENTER);
-    rect(100, 100, 50, 50);
+    r++;
+    fill(190,50,250);
+    ellipse(100,0,20);
+    pop();
     pop();
     
-    push();
-    rotate(-r);
-    fill("blue");
-    rect(150,150, 50,50);
-    pop();
+    translate(width/2, height/2);
+    fill(255);
+    rotate(r);
+//    r+=0.05;
     
-    push();
-    rotate(r*5);
-    fill("yellow");
-    rect(x, y, 50, 50);
-    x += 0.5;
-    y += 0.5;
-    pop();
+    ellipse(0,0,20);
     
-    r += 0.01;
     
-    push();
-    fill("pink");
-    for (var i = 0; i < 16; i++) {    
-        ellipse(100, 0, 50);
-        rotate(PI/8);
+//    n+=0.1;
+    for (var i = 0; i < 30; i++) {
+        for (var h = 0; h < width/2; h++){
+            ellipse(0+h, 0, 5);
+            rotate(PI/50);
+        }
     }
-    pop();
+    
+    
+
 }
 
 /////////////
+
+//push();
+//    rotate(r);
+//    rectMode(CENTER);
+//    rect(100, 100, 50, 50);
+//    pop();
+//    
+//    push();
+//    rotate(-r);
+//    fill("blue");
+//    rect(150,150, 50,50);
+//    pop();
 
 // animation
 
