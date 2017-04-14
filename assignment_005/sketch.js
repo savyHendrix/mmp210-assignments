@@ -28,10 +28,10 @@ function draw(){
 
                 var wGrid=wSize/8 //window grid size
 
-                var x1a=x1+1;
-                var y1a=y2+1;
-                var x2a=x1+1;
-                var y2a=y2+1;
+                var x1a=x1+1; //x coordinate - bottom of up lines
+                var y1a=y2+1; //y coordinate - bottom of up lines
+                var x2a=x1+1; //x coordinate - top of up lines
+                var y2a=y2+1; //y coordinate - top of up lines
 
                 //left upward lines
                 strokeWeight(1.5);
@@ -66,10 +66,10 @@ function draw(){
 
                 //left downward lines
                 //ascending left side
-                var x1b=x1+1;
-                var y1b=y2+wSize;
-                var x2b=x1+1;
-                var y2b=y2+wSize;
+                var x1b=x1+1; //x coordinate - top of down lines
+                var y1b=y2+wSize; //y coordinate - top of down lines
+                var x2b=x1+1; //x coordinate - bottom of down lines
+                var y2b=y2+wSize; //y coordinate - bottom of down lines
                 y1b-=wGrid;
                 x2b+=wGrid;
                 line(x1b,y1b,x2b,y2b);
@@ -113,10 +113,10 @@ function draw(){
 
                 var wGrid=wSize/8 //window grid size
 
-                var x1a=x1+1;
-                var y1a=y1+1;
-                var x2a=x1+1;
-                var y2a=y1+1;
+                var x1a=x1+1; //x coordinate - bottom of up lines
+                var y1a=y1+1; //y coordinate - bottom of up lines
+                var x2a=x1+1; //x coordinate - top of up lines
+                var y2a=y1+1; //y coordinate - top of up lines
 
                 //left upward lines
                 strokeWeight(1.5);
@@ -151,10 +151,10 @@ function draw(){
 
                 //left downward lines
                 //ascending left side
-                var x1b=x1+1;
-                var y1b=y1+wSize;
-                var x2b=x1+1;
-                var y2b=y1+wSize;
+                var x1b=x1+1; //x coordinate - top of down lines
+                var y1b=y1+wSize;//y coordinate - top of down lines
+                var x2b=x1+1;//x coordinate - bottom of down lines
+                var y2b=y1+wSize;//y coordinate - bottom of down lines
                 y1b-=wGrid;
                 x2b+=wGrid;
                 line(x1b,y1b,x2b,y2b);
