@@ -34,11 +34,8 @@ function setup() {
 	
 	noFill();
 	
-	for (var x = 0; x < width; x += w) {
-		for (var y = 0; y < height; y += h) {
-		
-	
-
+	for (var x = w*1.5; x < width-w; x += w) {
+		for (var y = w*1.5; y < height-w; y += h) {
 			
 			var shape = Math.floor(random(0, 4));
 		
@@ -63,6 +60,7 @@ function setup() {
 				fill(200,20,50);
 				ellipse(x, y, w/2, h/2);
 			} else if (shape == 3) {
+//              haru kanji
 				stroke(1);
 				line(x-w/4+2, y-h/3+2, x+w/4-2, y-h/3+2);
 				line(x-w/4+3, y-h/3+4, x+w/4-3, y-h/3+4);
