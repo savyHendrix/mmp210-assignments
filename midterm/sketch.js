@@ -32,8 +32,9 @@ function setup() {
 						noStroke();
 						fill(sakuraCenter);
 						ellipse(0, 0, w/4);
-						push();		
-						for (var i = 0; i < 5; i++) {
+						push();
+                        var r = random(0,5);
+						for (var i = 0; i < r; i++) {
 							noStroke();
 							fill(sakura);
 							ellipse(0, w/4, w/4, h/3);
@@ -49,8 +50,8 @@ function setup() {
 						noStroke();
 						fill(sakuraPollen);
 						ellipse(0, 0, w/4);
-						push();		
-						for (var i = 0; i < 5; i++) {
+						push();
+						for (var i = 0; i < r; i++) {
 							noStroke();
 							fill(sakura);
 							ellipse(0, w/4, w/4, h/3);
