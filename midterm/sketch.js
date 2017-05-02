@@ -150,10 +150,13 @@ function border(x, y, w, h){
 		var kxChange = w/16,
 			kyChange = h/16;
 		
-		var c = ['red', 'pink', 'white', 'black'];
-		var rc = c[Math.floor(Math.random()*c.length)];
-
-		stroke('rc');
+		var c = ["red", "pink", "white", "black"];
+//		var rc = color(c[floor(random()*c.length)]);
+////        var rc = color('c[random(0, c.length)]');
+//
+//		stroke(rc);   
+//      stroke('c[floor(random()*c.length)');
+        stroke('black');
 		strokeWeight(2.2);
 		strokeCap(SQUARE);
 		noFill();
