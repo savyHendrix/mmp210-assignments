@@ -152,8 +152,7 @@ function border(x, y, w, h){
 		
 		var c = ['red', 'pink', 'white', 'black'];
   
-//      stroke(c[floor(random(0, c.length)]);
-        stroke('black');
+        stroke(c[floor(random(0, c.length))]);
 		strokeWeight(2.2);
 		strokeCap(SQUARE);
 		noFill();
