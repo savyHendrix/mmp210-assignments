@@ -6,7 +6,7 @@
 var x = 0;
 
 function preload () {
-    img = loadImage("BrownBlock.png");
+    img = loadImage("../BrownBlock.png");
 }
 
 function setup() {
