@@ -6,33 +6,89 @@ function setup(){
 }
 
 function draw(){
-	background(40, 20, 20);
-
+	background(80, 60, 60);
 	
+	//fence
+	for (var q = 10; q < width; q+=20) {
+		var postY = height-250;
+		var postW = 5;
+		noStroke();
+		rect(q, postY, postW, 100);
+		triangle(q, postY, q+postW/2, postY-10, q+postW, postY);
+	}
+	rect(0, 330, width, 5);
+	rect(0, 280, width, 5);
+	
+	//tree
 	push();
 	translate(width/5, height);
-	//tree
-	var trunkW = width/10;
-	var trunkH = height/2;
-	///trunk
+	var trunkW = width/12;
+	var trunkH = height/3;
+	//trunk
 	rectMode(CENTER);
 	rect(0, -trunkH/2, trunkW, height/2);
 	triangle(-trunkW, 0, 0, -trunkH/4, trunkW, 0);
-	
-	
-	///leaves
-//	for(var i = 0; i < 30; i++){
-//		ellipse(x, y, 20);
-//	}
-//	
-	for (var i = 0; i < 20; i++) {
-		for (var h = 0; h < width; h++){
-			ellipse(0+h, 0, 5);
-			rotate(PI/50);
+	pop();
+	//leaves
+	push();
+	translate(width/5, height-trunkH-100)
+	for (var i = 0; i < 30; i++) {
+		for (var h = 0; h < 149; h+=0.5){
+			stroke(0.25);
+			ellipse(0, 0+h, 10);
+			rotate(PI/30);
 		}
 	}
 	pop();
-}
+	
+	//rat
+	ellipse(30, height, 40, 30);
+	
+	//moon
+	ellipse(width-100, 100, 200);
+	
+	//bat
+	stroke(2);
+	beginShape();
+		vertex(width-100, 100);
+		vertex(width-105, 95);
+		vertex(width-120, 102);
+		vertex(width-110, 102);
+		vertex(width-110, 102);
+	endShape();
+	
+	//headstone_01
+	rect(360, 360, 80, 100);
+	
+	//headstone_02
+	
+	//mausoleum
+	rect();
+	
+	//cross
+	rect(500, 320, 20, 150);
+	rect(460, 350, 80+20, 20);
+	
+	//constellation_01
+	stroke(2);
+
+	line(400, 100, 420, 130);
+	ellipse(400, 100, 5);
+	line(420, 130, 460, 120);
+	ellipse(420, 130, 5);
+	line(460, 120, 465, 85);
+	ellipse(460, 120, 5);
+	line(465, 85, 500, 40);
+	ellipse(465, 85, 5);
+	line(500, 40, 530, 20);
+	ellipse(500, 40, 5);
+	ellipse(530, 20, 5);
+
+
+} //drawEnd
+
+
+
 function mouseDragged(){
 	line();
 }
